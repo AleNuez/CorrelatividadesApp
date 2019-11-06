@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/9d51513a5e.js" crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="container" id="container-header">
+            <div class="row"><div class="col-sm-10 col-md-6 col-lg-6"><h1>Planificador de Carrera</h1></div>
+                <div class="col-1"><button type="button" onclick="window.location.reload()" class="btn btn-default"><span href="#" class="fas fa-redo fa-3x" style="float:inline-end right ; color: white"></span></button></div></div>
+            
+            
+            <h2>Analisis de Sistemas</h2>
+        </div>
+    </header>
+<div class="container">
+    
+            <div class="card-deck">
+                      <div class="col-sm-12 col-md-6 col-lg-4">
+                      <div class="card">
+                       <div class="card-header" style="display: inline-flex;"><h3>Primer Año</h3><button style="position: relative;" type="button" class="btn btn-default"><span class="fas fa-chevron-down"></span></button></div>
+                        <div>
+                            <div class="primero" id="anmati" ><button onclick="prender(this)" class="btn btn-secondary btn-block" >Analisis Matematico</button></div>
+                            <div class="primero" id="isis"><button onclick="prender(this)" class="btn btn-secondary btn-block" >Introduccion a Sistemas de Informacion</button></div>
+                            <div class="primero" id="meto"><button onclick="prender(this)" class="btn btn-secondary btn-block" >Metodología de Investigacion</button></div>
+                            <div class="primero" id="admo"><button onclick="prender(this)" class="btn btn-secondary btn-block" >Administracion de las Organizaciones</button></div>
+                            <div class="primero" id="arq"><button onclick="prender(this)" class="btn btn-secondary btn-block" >Arquitectura de las Computadoras</button></div>
+                            <div class="primero" id="prgi"><button onclick="prender(this)" class="btn btn-secondary btn-block" >Programacion I</button></div>
+                            <div class="primero" id="algi"><button onclick="prender(this)" class="btn btn-secondary btn-block" >Algebra</button></div>
+                            <div class="primero" id="edi" ><button onclick="prender(this)" class="btn btn-secondary btn-block" >Espacio de Definicion I</button></div>
+                            <div class="primero" id="ingi"><button onclick="prender(this)" class="btn btn-secondary btn-block" >Ingles I</button></div>
+                        </div>
+                      </div>
+                      </div>  
+                        <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="card" >
+                        <div class="card-header" style="display: inline-flex;"><h3>Segundo Año</h3><button style="position: relative;" type="button" class="btn btn-default"><span class="fas fa-chevron-down"></span></button></div>
+
+                          <div id="secondyear" onmouseover="chckprimero()">
+                          <div class="segundo" id="prob"><button onclick="prender(this)" class="btn btn-secondary btn-block">Probabilidad y Estadistica</button></div>
+                          <div class="segundo" id="sisi"><button onclick="prender(this)" class="btn btn-secondary btn-block">Sistemas de Informacion I</button></div>
+                          <div class="segundo" id="edii"><button onclick="prender(this)" class="btn btn-secondary btn-block">Espacio de Definicion II</button></div>
+                          <div class="segundo" id="os"><button onclick="prender(this)" class="btn btn-secondary btn-block">Sistemas Operativos</button></div>
+                          <div class="segundo" id="db"><button onclick="prender(this)" class="btn btn-secondary btn-block">Bases de Datos</button></div>
+                          <div class="segundo" id="anmatii"><button onclick="prender(this)" class="btn btn-secondary btn-block">Analisis Matematico II</button></div>
+                          <div class="segundo" id="ingii"><button onclick="prender(this)" class="btn btn-secondary btn-block">Ingles II</button></div>
+                          <div class="segundo" id="prgii"><button onclick="prender(this)" class="btn btn-secondary btn-block">Programacion II</button></div>
+                          </div>
+                        </div>
+                        </div>
+                      <div class="col-sm-12 col-md-6 col-lg-4">  
+                      <div class="card">
+                      <div class="card-header" style="display: inline-flex;"><h3>Tercer Año</h3><button style="position: relative;" type="button" class="btn btn-default"><span class="fas fa-chevron-down"></span></button></div>
+
+                      <div id="thirdyear" onmouseover="chcksegundo()">
+                      <div class="tercero" id="sisii"><button onclick="prender(this)" class="btn btn-secondary btn-block">Sistemas de Informacion II</button></div>
+                      <div class="tercero" id="tele"><button onclick="prender(this)" class="btn btn-secondary btn-block">Teleinformatica</button></div>
+                      <div class="tercero" id="prac"><button onclick="prender(this)" class="btn btn-secondary btn-block">Practica Profesional</button></div>
+                      <div class="tercero" id="invop"><button onclick="prender(this)" class="btn btn-secondary btn-block">Investigacion Operativa</button></div>
+                      <div class="tercero" id="eco"><button onclick="prender(this)" class="btn btn-secondary btn-block">Economia Empresarial</button></div>
+                      <div class="tercero" id="ediii"><button onclick="prender(this)" class="btn btn-secondary btn-block">Espacio de Definicion III</button></div>
+                      </div>
+                      </div>  
+                      </div>
+                         
+                 
+    
+   
+          
+                  <div class="col-sm-12 col-md-6 col-lg-4">
+                  <div class="card"> 
+                         <div id="fourthyear" onmouseover="chcktercero()">
+                         <div class="card-header" style="display: inline-flex;"><h3>Cuarto Año</h3><button style="position: relative;" type="button" class="btn btn-default"><span class="fas fa-chevron-down"></span></button></div>
+
+                         </div>
+                  </div>
+                  </div>
+                  <div class="col-sm-12 col-md-6 col-lg-4">
+                  <div class="card">   
+                        <div id="fifthyear" onmouseover="chckcuarto()">
+                        <div class="card-header" style="display: inline-flex;"><h3>Quinto Año</h3><button style="position: relative;" type="button" class="btn btn-default"><span class="fas fa-chevron-down"></span></button></div>
+   
+                        </div>
+                  </div>
+                  </div>
+                  <div class="col-sm-12 col-md-6 col-lg-4">
+                  <div class="card">     
+                        <div id="sixthyear" onmouseover="chckquinto()">
+                        <div class="card-header" style="display: inline-flex;"><h3>Sexto Año</h3><button style="position: relative;" type="button" class="btn btn-default"><span class="fas fa-chevron-down"></span></button></div>
+  
+                        </div>      
+                  </div>    
+                  </div>   
+                
+                </div>   
+
+</div>
+
+
+
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
