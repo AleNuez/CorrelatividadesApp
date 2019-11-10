@@ -1,16 +1,16 @@
 var veces = 0;
 
-var desaprobado = "btn btn-secondary btn-block";
+var desaprobado = "btn btn-secondary";
 
 
 function prender(mat)
 {
-    if (mat.className == "btn btn-secondary btn-block")
+    if (mat.className == "btn btn-secondary")
     {
         mat.className = "btn btn-success";
     } else if(mat.className == "btn btn-success")
         {
-            mat.className = "btn btn-secondary btn-block";
+            mat.className = "btn btn-secondary";
         }
 }
 
