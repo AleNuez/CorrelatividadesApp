@@ -16,6 +16,7 @@ function prender(mat)
 
 function chckprimero()
 {
+    var boton = document.getElementById("chckprimero");
     var inglesuno = document.getElementById("ingi");
     var prgi = document.getElementById("prgi");
     var anmatuno = document.getElementById("anmati");
@@ -43,6 +44,8 @@ function chckprimero()
     var espaciocuarto = document.getElementById("fourthyear");
     var espaciotercero = document.getElementById("thirdyear");
     var espaciosegundo = document.getElementById("secondyear");
+
+    boton.firstChild.style = "color:green";
     if (anmatuno.className == "primero" && anmatuno.firstChild.className == desaprobado)
     {
         espaciosegundo.appendChild(anmatuno);
@@ -188,6 +191,7 @@ function chckprimero()
  }
 function chcksegundo()
 {
+    var boton = document.getElementById("chcksegundo");
     var inglesuno = document.getElementById("ingi");
     var prgi = document.getElementById("prgi");
     var anmatuno = document.getElementById("anmati");
@@ -218,6 +222,7 @@ function chcksegundo()
     var espaciocuarto = document.getElementById("fourthyear");
     var espaciotercero = document.getElementById("thirdyear");
 
+    boton.firstChild.style = "color:green";
     // Primero recursa segundo -> tercero
     if (anmatuno.className == "segundo" && anmatuno.firstChild.className == desaprobado)
     {
@@ -468,6 +473,7 @@ if (sisi.className == "tercero" && sisi.firstChild.className == desaprobado)
 }
 function chcktercero()
 {
+    var boton = document.getElementById("chcktercero");
     var inglesuno = document.getElementById("ingi");
     var prgi = document.getElementById("prgi");
     var anmatuno = document.getElementById("anmati");
@@ -498,6 +504,7 @@ function chcktercero()
     var espacioquinto = document.getElementById("fifthyear");
     var espaciocuarto = document.getElementById("fourthyear");
     
+    boton.firstChild.style = "color:green";
     // primero recursa tercero -> 4
     if (anmatuno.className == "tercero" && anmatuno.firstChild.className == desaprobado)
     {
@@ -717,6 +724,7 @@ if (sisi.className == "quinto" && sisi.firstChild.className == desaprobado)
 }
 function chckcuarto()
 {
+    var boton = document.getElementById("chckcuarto");
     var inglesuno = document.getElementById("ingi");
     var prgi = document.getElementById("prgi");
     var anmatuno = document.getElementById("anmati");
@@ -746,6 +754,7 @@ function chckcuarto()
     var espaciosexto = document.getElementById("sixthyear");
     var espacioquinto = document.getElementById("fifthyear");
 
+    boton.firstChild.style = "color:green";
     // primero recursa cuarto -> quinto
     if (anmatuno.className == "cuarto" && anmatuno.firstChild.className == desaprobado)
     {
@@ -869,6 +878,7 @@ function chckcuarto()
 }
 function chckquinto()
 {
+    var boton = document.getElementById("chckquinto");
     var inglesuno = document.getElementById("ingi");
     var prgi = document.getElementById("prgi");
     var anmatuno = document.getElementById("anmati");
@@ -897,6 +907,7 @@ function chckquinto()
 
     var espaciosexto = document.getElementById("sixthyear");
     
+    boton.firstChild.style = "color:green";
     // primero recursa cuarto -> sexto
     if (anmatuno.className == "quinto" && anmatuno.firstChild.className == desaprobado)
     {
