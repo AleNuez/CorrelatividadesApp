@@ -13,16 +13,31 @@
     <title>CorrelativApp</title>
 </head>
 <body>
-    <header>
-        <div class="container" id="container-header">
-            <div class="row"><div class="col-sm-10 col-md-6 col-lg-6"><h1>Planificador de Carrera</h1></div>
-                <div class="col-1"><button type="button" onclick="window.location.reload()" class="btn btn-default"><span href="#" class="fas fa-redo fa-3x" style="float:inline-end right ; color: white"></span></button></div></div>
-            
-            
-            <h2>Analisis de Sistemas</h2>
-         
-        </div>
-    </header>
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+                <!-- Brand -->
+                <a class="navbar-brand" href="#">Planificador de Carrera</a>
+              
+                <!-- Toggler/collapsibe Button -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <!-- Navbar links -->
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <button type="button" onclick="window.location.reload()" class="btn btn-default" style="color: white"><span href="#" class="fas fa-redo"></span> Recargar</button>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./index.html"><button type="button" class="btn btn-default" style="color: white"><span href="./index.html" class="fas fa-home"></span> Home</button></a>
+                         
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+              <header>
+                    <h2>Analisis de Sistemas</h2>
+            </header>
 <div class="container">
     
             <div class="card-deck">
@@ -105,7 +120,7 @@
                 </div>   
 
 </div>
-<a href="index.html"><button type="button" class="btn btn-primary btn-lg">Salir</button></a> 
+
 
 
 
