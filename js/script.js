@@ -1,10 +1,9 @@
 var veces = 0;
-
 var desaprobado = "btn btn-secondary";
 
 
 function prender(mat)
-{
+ {
     if (mat.className == "btn btn-secondary")
     {
         mat.className = "btn btn-success";
@@ -12,10 +11,9 @@ function prender(mat)
         {
             mat.className = "btn btn-secondary";
         }
-}
-
+ }
 function chckprimero()
-{
+ {
     var boton = document.getElementById("chckprimero");
     var inglesuno = document.getElementById("ingi");
     var prgi = document.getElementById("prgi");
@@ -188,9 +186,9 @@ function chckprimero()
 
 
 
- }
+  }
 function chcksegundo()
-{
+ {
     var boton = document.getElementById("chcksegundo");
     var inglesuno = document.getElementById("ingi");
     var prgi = document.getElementById("prgi");
@@ -321,7 +319,7 @@ function chcksegundo()
          os.className = "cuarto";
      }
    
-// segundo recursa  segundo ->  tercero
+ // segundo recursa  segundo ->  tercero
 
      if (inglesdos.className == "segundo" && inglesdos.firstChild.className == desaprobado)
      {
@@ -418,61 +416,61 @@ function chcksegundo()
          prac.className = "quinto";
      }
      
-// de segundo recursando tercero -> 4
-if (prob.className == "tercero" && prob.firstChild.className == desaprobado)
-{
+ // de segundo recursando tercero -> 4
+ if (prob.className == "tercero" && prob.firstChild.className == desaprobado)
+ {
     espaciocuarto.appendChild(invop);
     invop.className = "cuarto";
-}
-if (anmatdos.className == "tercero" && anmatdos.firstChild.className == desaprobado)
-{
+ }
+ if (anmatdos.className == "tercero" && anmatdos.firstChild.className == desaprobado)
+ {
     espaciocuarto.appendChild(invop);
     invop.className = "cuarto";
-}
-if (prgii.className == "tercero" && prgii.firstChild.className == desaprobado)
-{
+ }
+ if (prgii.className == "tercero" && prgii.firstChild.className == desaprobado)
+ {
     espaciocuarto.appendChild(invop);
     invop.className = "cuarto";
-}
-if (sisi.className == "tercero" && sisi.firstChild.className == desaprobado)
-{
+ }
+ if (sisi.className == "tercero" && sisi.firstChild.className == desaprobado)
+ {
     espaciocuarto.appendChild(eco);
     eco.className = "cuarto";
-}
-if (os.className == "tercero" && os.firstChild.className == desaprobado)
-{
+ }
+ if (os.className == "tercero" && os.firstChild.className == desaprobado)
+ {
     espaciocuarto.appendChild(tele);
     tele.className = "cuarto";
-}
-if (sisi.className == "tercero" && sisi.firstChild.className == desaprobado)
-{
+ }
+ if (sisi.className == "tercero" && sisi.firstChild.className == desaprobado)
+ {
     espaciocuarto.appendChild(sisii);
     sisii.className = "cuarto";
-}
-if (meto.className == "tercero" && meto.firstChild.className == desaprobado)
-{
+ }
+ if (meto.className == "tercero" && meto.firstChild.className == desaprobado)
+ {
     espaciocuarto.appendChild(tele);
     tele.className = "cuarto";
-}
-if (prgii.className == "tercero" && prgii.firstChild.className == desaprobado)
-{
+ }
+ if (prgii.className == "tercero" && prgii.firstChild.className == desaprobado)
+ {
     espaciocuarto.appendChild(prac);
     prac.className = "cuarto";
-}
-if (db.className == "tercero" && db.firstChild.className == desaprobado)
-{
+ }
+ if (db.className == "tercero" && db.firstChild.className == desaprobado)
+ {
     espaciocuarto.appendChild(prac);
     prac.className = "cuarto";
-}
-if (sisi.className == "tercero" && sisi.firstChild.className == desaprobado)
-{
+ }
+ if (sisi.className == "tercero" && sisi.firstChild.className == desaprobado)
+ {
     espaciocuarto.appendChild(prac);
     prac.className = "cuarto";
-}
+ }
 
-}
+ }
 function chcktercero()
-{
+ {
     var boton = document.getElementById("chcktercero");
     var inglesuno = document.getElementById("ingi");
     var prgi = document.getElementById("prgi");
@@ -625,105 +623,105 @@ function chcktercero()
         espaciocuarto.appendChild(ediii);
         ediii.className = "cuarto";
     }
-// correlativas de primero recursan tercero ->  quinto
-if (anmatuno.className == "cuarto" && anmatuno.firstChild.className == desaprobado)
-{
+ // correlativas de primero recursan tercero ->  quinto
+ if (anmatuno.className == "cuarto" && anmatuno.firstChild.className == desaprobado)
+ {
     espacioquinto.appendChild(anmatdos);
     anmatdos.className = "quinto";
-}
-if (anmatuno.className == "cuarto" && anmatuno.firstChild.className == desaprobado)
-{
+ }
+ if (anmatuno.className == "cuarto" && anmatuno.firstChild.className == desaprobado)
+ {
     espacioquinto.appendChild(prob);
     prob.className = "quinto";
-}
-if (inglesuno.className == "cuarto" && inglesuno.firstChild.className == desaprobado)
-{
+ }
+ if (inglesuno.className == "cuarto" && inglesuno.firstChild.className == desaprobado)
+ {
     espacioquinto.appendChild(inglesdos);
     inglesdos.className ="quinto";
-}
-if (prgi.className == "cuarto" && prgi.firstChild.className == desaprobado)
-{
+ }
+ if (prgi.className == "cuarto" && prgi.firstChild.className == desaprobado)
+ {
     espacioquinto.appendChild(prgii);
     espacioquinto.appendChild(db);
     prgii.className ="quinto";
     db.className = "quinto";
-}
-if (isis.className == "cuarto" && isis.firstChild.className == desaprobado)
-{
+ }
+ if (isis.className == "cuarto" && isis.firstChild.className == desaprobado)
+ {
     espacioquinto.appendChild(sisi);
     sisi.className = "quinto";
-}
-if (admo.className == "cuarto" && admo.firstChild.className == desaprobado)
-{
+ }
+ if (admo.className == "cuarto" && admo.firstChild.className == desaprobado)
+ {
     espacioquinto.appendChild(sisi);
     sisi.className = "quinto";
-}
-if (algi.className == "cuarto" && algi.firstChild.className == desaprobado)
-{
+ }
+ if (algi.className == "cuarto" && algi.firstChild.className == desaprobado)
+ {
     espacioquinto.appendChild(prob);
     prob.className = "quinto";
-}
-if (arq.className == "cuarto" && arq.firstChild.className == desaprobado)
-{
+ }
+ if (arq.className == "cuarto" && arq.firstChild.className == desaprobado)
+ {
     espacioquinto.appendChild(os);
     os.className = "quinto";
-}
+ }
     
-// correlativas de segundo recursando tercero -> sexto
-if (prob.className == "quinto" && prob.firstChild.className == desaprobado)
-{
+ // correlativas de segundo recursando tercero -> sexto
+ if (prob.className == "quinto" && prob.firstChild.className == desaprobado)
+ {
     espaciosexto.appendChild(invop);
     invop.className = "sexto";
-}
-if (anmatdos.className == "quinto" && anmatdos.firstChild.className == desaprobado)
-{
+ }
+ if (anmatdos.className == "quinto" && anmatdos.firstChild.className == desaprobado)
+ {
     espaciosexto.appendChild(invop);
     invop.className = "sexto";
-}
-if (prgii.className == "quinto" && prgii.firstChild.className == desaprobado)
-{
+ }
+ if (prgii.className == "quinto" && prgii.firstChild.className == desaprobado)
+ {
     espaciosexto.appendChild(invop);
     invop.className = "sexto";
-}
-if (sisi.className == "quinto" && sisi.firstChild.className == desaprobado)
-{
+ }
+ if (sisi.className == "quinto" && sisi.firstChild.className == desaprobado)
+ {
     espaciosexto.appendChild(eco);
     eco.className = "sexto";
-}
-if (os.className == "quinto" && os.firstChild.className == desaprobado)
-{
+ }
+ if (os.className == "quinto" && os.firstChild.className == desaprobado)
+ {
     espaciosexto.appendChild(tele);
     tele.className = "sexto";
-}
-if (sisi.className == "quinto" && sisi.firstChild.className == desaprobado)
-{
+ }
+ if (sisi.className == "quinto" && sisi.firstChild.className == desaprobado)
+ {
     espaciosexto.appendChild(sisii);
     sisii.className = "sexto";
-}
-if (meto.className == "quinto" && meto.firstChild.className == desaprobado)
-{
+ }
+ if (meto.className == "quinto" && meto.firstChild.className == desaprobado)
+ {
     espaciosexto.appendChild(tele);
     tele.className = "sexto";
-}
-if (prgii.className == "quinto" && prgii.firstChild.className == desaprobado)
-{
+ }
+ if (prgii.className == "quinto" && prgii.firstChild.className == desaprobado)
+ {
     espaciosexto.appendChild(prac);
     prac.className = "sexto";
-}
-if (db.className == "quinto" && db.firstChild.className == desaprobado)
-{
+ }
+ if (db.className == "quinto" && db.firstChild.className == desaprobado)
+ {
     espaciosexto.appendChild(prac);
     prac.className = "sexto";
-}
-if (sisi.className == "quinto" && sisi.firstChild.className == desaprobado)
-{
+ }
+ if (sisi.className == "quinto" && sisi.firstChild.className == desaprobado)
+ {
     espaciosexto.appendChild(prac);
     prac.className = "sexto";
-}
+ }
 
-}
+ }
 function chckcuarto()
-{
+ {
     var boton = document.getElementById("chckcuarto");
     var inglesuno = document.getElementById("ingi");
     var prgi = document.getElementById("prgi");
@@ -875,9 +873,9 @@ function chckcuarto()
         espacioquinto.appendChild(ediii);
         ediii.className = "quinto";
     }
-}
+ }
 function chckquinto()
-{
+ {
     var boton = document.getElementById("chckquinto");
     var inglesuno = document.getElementById("ingi");
     var prgi = document.getElementById("prgi");
@@ -1028,7 +1026,7 @@ function chckquinto()
         espaciosexto.appendChild(ediii);
         ediii.className = "sexto";
     }
-}
+ }
 
 
 
