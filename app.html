@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/all.css">
     <script src="js/all.js"></script>
     <script src="js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <icon src="icon.png" />
     <title>CorrelativApp</title>
 </head>
@@ -42,18 +43,18 @@
     
             <div class="card-deck">
                       <div class="col-sm-12 col-md-6 col-lg-4">
-                      <div class="card">
-                       <div class="card-header d-flex justify-content-between"><h3>Primer Año</h3><button id="chckprimero" onclick="chckprimero()" type="button" class="btn btn-default"><span class="fas fa-check-circle fa-3x"></span></button></div>
+                      <div class="card" data-toggle="tooltip" title="Marcar solo las aprobadas">
+                       <div class="card-header d-flex justify-content-between"><h3>Primer Año</h3><button data-toggle="tooltip" title="Click para pasar al siguiente año" id="chckprimero" onclick="chckprimero()" type="button" class="btn btn-default"><span class="fas fa-check-circle fa-3x"></span></button></div>
                         <div>
-                            <div class="primero" id="anmati" ><button onclick="prender(this)" class="btn btn-secondary" >Analisis Matematico <span class="badge badge-dark"> 2</span></button></div>
-                            <div class="primero" id="isis"><button onclick="prender(this)" class="btn btn-secondary" >Intro a Sistemas de Informacion <span class="badge badge-dark"> 1</span></button></div>
-                            <div class="primero" id="meto"><button onclick="prender(this)" class="btn btn-secondary" >Metodología de Investigacion <span class="badge badge-dark"> 0</span></button></div>
-                            <div class="primero" id="admo"><button onclick="prender(this)" class="btn btn-secondary" >Administracion de las Organizaciones <span class="badge badge-dark"> 1</span></button></div>
-                            <div class="primero" id="arq"><button onclick="prender(this)" class="btn btn-secondary" >Arquitectura de las Computadoras <span class="badge badge-dark"> 1</span></button></div>
-                            <div class="primero" id="prgi"><button onclick="prender(this)" class="btn btn-secondary" >Programacion I <span class="badge badge-dark"> 2</span></button></div>
-                            <div class="primero" id="algi"><button onclick="prender(this)" class="btn btn-secondary" >Algebra <span class="badge badge-dark"> 1</span></button></div>
-                            <div class="primero" id="edi" ><button onclick="prender(this)" class="btn btn-secondary" >Espacio de Definicion I <span class="badge badge-dark"> 0</span></button></div>
-                            <div class="primero" id="ingi"><button onclick="prender(this)" class="btn btn-secondary" >Ingles I <span class="badge badge-dark"> 1</span></button></div>
+                            <div class="primero"  name="botonete" id="anmati" ><button  value="off"  onclick="prender(this)" class="btn btn-secondary" >Analisis Matematico <span class="badge badge-dark"> 2</span></button></div>
+                            <div class="primero" name="botonete" id="isis"><button  value="off"  onclick="prender(this)" class="btn btn-secondary" >Intro a Sistemas de Informacion <span class="badge badge-dark"> 1</span></button></div>
+                            <div class="primero" name="botonete"  id="meto"><button  value="off"  onclick="prender(this)" class="btn btn-secondary" >Metodología de Investigacion <span class="badge badge-dark"> 0</span></button></div>
+                            <div class="primero" name="botonete" id="admo"><button  value="off"  onclick="prender(this)" class="btn btn-secondary" >Administracion de las Organizaciones <span class="badge badge-dark"> 1</span></button></div>
+                            <div class="primero" name="botonete" id="arq"><button  value="off"  onclick="prender(this)" class="btn btn-secondary" >Arquitectura de las Computadoras <span class="badge badge-dark"> 1</span></button></div>
+                            <div class="primero" name="botonete" id="prgi"><button value="off"   onclick="prender(this)" class="btn btn-secondary" >Programacion I <span class="badge badge-dark"> 2</span></button></div>
+                            <div class="primero" name="botonete" id="algi"><button  value="off"  onclick="prender(this)" class="btn btn-secondary" >Algebra <span class="badge badge-dark"> 1</span></button></div>
+                            <div class="primero" name="botonete" id="edi" ><button value="off"   onclick="prender(this)" class="btn btn-secondary" >Espacio de Definicion I <span class="badge badge-dark"> 0</span></button></div>
+                            <div class="primero" name="botonete"  id="ingi"><button  value="off"  onclick="prender(this)" class="btn btn-secondary" >Ingles I <span class="badge badge-dark"> 1</span></button></div>
                         </div>
                       </div>
                       </div>  
@@ -62,14 +63,14 @@
                          <div class="card-header d-flex justify-content-between"><h3>Segundo Año</h3><button id="chcksegundo" onclick="chcksegundo()" type="button" class="btn btn-default"><span class="fas fa-check-circle fa-3x"></span></button></div>
 
                           <div id="secondyear" >
-                          <div class="segundo" id="prob"><button onclick="prender(this)" class="btn btn-secondary">Probabilidad y Estadistica <span class="badge badge-dark">1</span></button></div>
-                          <div class="segundo" id="sisi"><button onclick="prender(this)" class="btn btn-secondary">Sistemas de Informacion I <span class="badge badge-dark"> 3</span></button></div>
-                          <div class="segundo" id="edii"><button onclick="prender(this)" class="btn btn-secondary">Espacio de Definicion II <span class="badge badge-dark"> 0</span></button></div>
-                          <div class="segundo" id="os"><button onclick="prender(this)" class="btn btn-secondary">Sistemas Operativos <span class="badge badge-dark"> 1</span></button></div>
-                          <div class="segundo" id="db"><button onclick="prender(this)" class="btn btn-secondary">Bases de Datos <span class="badge badge-dark"> 1</span></button></div>
-                          <div class="segundo" id="anmatii"><button onclick="prender(this)" class="btn btn-secondary">Analisis Matematico II <span class="badge badge-dark"> 1</span></button></div>
-                          <div class="segundo" id="ingii"><button onclick="prender(this)" class="btn btn-secondary">Ingles II <span class="badge badge-dark"> 0</span></button></div>
-                          <div class="segundo" id="prgii"><button onclick="prender(this)" class="btn btn-secondary">Programacion II <span class="badge badge-dark"> 2</span></button></div>
+                          <div class="segundo" id="prob"><button value="off" onclick="prender(this)" class="btn btn-secondary">Probabilidad y Estadistica <span class="badge badge-dark">1</span></button></div>
+                          <div class="segundo" id="sisi"><button value="off" onclick="prender(this)" class="btn btn-secondary">Sistemas de Informacion I <span class="badge badge-dark"> 3</span></button></div>
+                          <div class="segundo" id="edii"><button value="off" onclick="prender(this)" class="btn btn-secondary">Espacio de Definicion II <span class="badge badge-dark"> 0</span></button></div>
+                          <div class="segundo" id="os"><button value="off" onclick="prender(this)" class="btn btn-secondary">Sistemas Operativos <span class="badge badge-dark"> 1</span></button></div>
+                          <div class="segundo" id="db"><button value="off" onclick="prender(this)" class="btn btn-secondary">Bases de Datos <span class="badge badge-dark"> 1</span></button></div>
+                          <div class="segundo" id="anmatii"><button value="off" onclick="prender(this)" class="btn btn-secondary">Analisis Matematico II <span class="badge badge-dark"> 1</span></button></div>
+                          <div class="segundo" id="ingii"><button value="off" onclick="prender(this)" class="btn btn-secondary">Ingles II <span class="badge badge-dark"> 0</span></button></div>
+                          <div class="segundo" id="prgii"><button value="off" onclick="prender(this)" class="btn btn-secondary">Programacion II <span class="badge badge-dark"> 2</span></button></div>
                           </div>
                         </div>
                         </div>
@@ -78,12 +79,12 @@
                       <div class="card-header d-flex justify-content-between"><h3>Tercer Año</h3><button id="chcktercero" onclick="chcktercero()" type="button" class="btn btn-default"><span class="fas fa-check-circle fa-3x"></span></button></div>                      
 
                       <div id="thirdyear" >
-                      <div class="tercero" id="sisii"><button onclick="prender(this)" class="btn btn-secondary">Sistemas de Informacion II</button></div>
-                      <div class="tercero" id="tele"><button onclick="prender(this)" class="btn btn-secondary">Teleinformatica</button></div>
-                      <div class="tercero" id="prac"><button onclick="prender(this)" class="btn btn-secondary">Practica Profesional</button></div>
-                      <div class="tercero" id="invop"><button onclick="prender(this)" class="btn btn-secondary">Investigacion Operativa</button></div>
-                      <div class="tercero" id="eco"><button onclick="prender(this)" class="btn btn-secondary">Economia Empresarial</button></div>
-                      <div class="tercero" id="ediii"><button onclick="prender(this)" class="btn btn-secondary">Espacio de Definicion III</button></div>
+                      <div class="tercero" id="sisii"><button value="off" onclick="prender(this)" class="btn btn-secondary">Sistemas de Informacion II</button></div>
+                      <div class="tercero" id="tele"><button value="off" onclick="prender(this)" class="btn btn-secondary">Teleinformatica</button></div>
+                      <div class="tercero" id="prac"><button value="off" onclick="prender(this)" class="btn btn-secondary">Practica Profesional</button></div>
+                      <div class="tercero" id="invop"><button value="off" onclick="prender(this)" class="btn btn-secondary">Investigacion Operativa</button></div>
+                      <div class="tercero" id="eco"><button value="off" onclick="prender(this)" class="btn btn-secondary">Economia Empresarial</button></div>
+                      <div class="tercero" id="ediii"><button value="off" onclick="prender(this)" class="btn btn-secondary">Espacio de Definicion III</button></div>
                       </div>
                       </div>  
                       </div>
@@ -110,7 +111,7 @@
                   <div class="col-sm-12 col-md-6 col-lg-4">
                   <div class="card">     
                         <div id="sixthyear">
-                        <div class="card-header d-flex justify-content-between"><h3>Sexto Año</h3><button type="button" class="btn btn-default"><span class="fas fa-check-circle fa-3x"></span></button></div>  
+                        <div class="card-header d-flex justify-content-between"><h3>Sexto Año</h3><button id="chcksexto" onclick="chcksexto()" type="button" class="btn btn-default"><span class="fas fa-check-circle fa-3x"></span></button></div>  
                         </div>      
                   </div>    
                   </div>   
@@ -119,6 +120,31 @@
 
 </div>
 
+      
+      <!-- El Modal -->
+      <div class="modal" id="Modal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+      
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">Felicitaciones</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+      
+            <!-- Modal body -->
+            <div class="modal-body" id="terminaEn">
+              Segun los calculos, vas a terminar la carrera en 
+            </div>
+      
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+            </div>
+      
+          </div>
+        </div>
+      </div>
 
 
 

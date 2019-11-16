@@ -1,21 +1,38 @@
 var veces = 0;
-
 var desaprobado = "btn btn-secondary";
+var aprobado = document.getElementsByClassName("btn btn-success");
 
-
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip(); 
+  });
+ 
 function prender(mat)
 {
     if (mat.className == "btn btn-secondary")
     {
+        
         mat.className = "btn btn-success";
     } else if(mat.className == "btn btn-success")
         {
+            
             mat.className = "btn btn-secondary";
         }
+       
 }
+function chckaprobado()
+{
+ if (aprobado.length == 23)
+{
+    $("#Modal").modal();
+}
+}
+
+
+
 
 function chckprimero()
 {
+    chckaprobado();
     var boton = document.getElementById("chckprimero");
     var inglesuno = document.getElementById("ingi");
     var prgi = document.getElementById("prgi");
@@ -473,6 +490,7 @@ if (sisi.className == "tercero" && sisi.firstChild.className == desaprobado)
 }
 function chcktercero()
 {
+    chckaprobado();
     var boton = document.getElementById("chcktercero");
     var inglesuno = document.getElementById("ingi");
     var prgi = document.getElementById("prgi");
@@ -724,6 +742,7 @@ if (sisi.className == "quinto" && sisi.firstChild.className == desaprobado)
 }
 function chckcuarto()
 {
+    chckaprobado();
     var boton = document.getElementById("chckcuarto");
     var inglesuno = document.getElementById("ingi");
     var prgi = document.getElementById("prgi");
@@ -878,6 +897,7 @@ function chckcuarto()
 }
 function chckquinto()
 {
+    chckaprobado();
     var boton = document.getElementById("chckquinto");
     var inglesuno = document.getElementById("ingi");
     var prgi = document.getElementById("prgi");
@@ -1028,6 +1048,12 @@ function chckquinto()
         espaciosexto.appendChild(ediii);
         ediii.className = "sexto";
     }
+}
+function chcksexto()
+{
+ chckaprobado(); 
+ var boton = document.getElementById("chcksexto");  
+ boton.firstChild.style = "color:green";
 }
 
 
