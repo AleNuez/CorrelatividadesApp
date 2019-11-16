@@ -19,16 +19,16 @@ function prender(mat)
         }
        
 }
-function chckaprobado()
+function chckaprobado(years)
 {
+    
  if (aprobado.length == 23)
 {
     $("#Modal").modal();
+    $(".modal-body").append(years);
+
 }
 }
-
-
-
 
 function chckprimero()
 {
@@ -490,7 +490,8 @@ if (sisi.className == "tercero" && sisi.firstChild.className == desaprobado)
 }
 function chcktercero()
 {
-    chckaprobado();
+    var years = " 3 años.";
+    chckaprobado(years);
     var boton = document.getElementById("chcktercero");
     var inglesuno = document.getElementById("ingi");
     var prgi = document.getElementById("prgi");
@@ -742,7 +743,8 @@ if (sisi.className == "quinto" && sisi.firstChild.className == desaprobado)
 }
 function chckcuarto()
 {
-    chckaprobado();
+    var years = " 4 años.";
+    chckaprobado(years);
     var boton = document.getElementById("chckcuarto");
     var inglesuno = document.getElementById("ingi");
     var prgi = document.getElementById("prgi");
@@ -897,7 +899,8 @@ function chckcuarto()
 }
 function chckquinto()
 {
-    chckaprobado();
+    var years = " 5 años.";
+    chckaprobado(years);
     var boton = document.getElementById("chckquinto");
     var inglesuno = document.getElementById("ingi");
     var prgi = document.getElementById("prgi");
@@ -1051,9 +1054,10 @@ function chckquinto()
 }
 function chcksexto()
 {
- chckaprobado(); 
- var boton = document.getElementById("chcksexto");  
- boton.firstChild.style = "color:green";
+    var years = " 6 años o más..";
+    chckaprobado(years);
+    var boton = document.getElementById("chcksexto");  
+    boton.firstChild.style = "color:green";
 }
 
 
