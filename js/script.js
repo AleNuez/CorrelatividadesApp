@@ -20,15 +20,14 @@ function prender(mat)
        
 }
 function chckaprobado(years)
-{
-    
- if (aprobado.length == 23)
-{
-    $("#Modal").modal();
-    $(".modal-body").append(years);
+ {   
+    if (aprobado.length == 23)
+    {
+        $("#Modal").modal();
+        $(".modal-body").append(years);
 
-}
-}
+    } 
+ }
 
 function chckprimero()
 {
