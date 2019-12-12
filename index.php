@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -10,7 +11,7 @@
     <script src="js/all.js"></script>
     <script src="js/script.js"></script>
     <icon src="icon.png" />
-    <title>Bienvenido</title>
+    <title>ISFT</title>
 </head>
 <body>
         <nav class="navbar navbar-expand-md bg-dark navbar-dark">
@@ -29,7 +30,11 @@
                         <button type="button" onclick="window.location.reload()" class="btn btn-default" style="color: white"><span href="#" class="fas fa-redo"></span> Recargar</button>
                     </li>
                     <li class="nav-item">
-                        <a href="./index.html"><button type="button" class="btn btn-default" style="color: white"><span href="./index.html" class="fas fa-home"></span> Home</button></a>
+                        <a href="./index.php"><button type="button" class="btn btn-default" style="color: white"><span href="./index.html" class="fas fa-home"></span> Home</button></a>
+                         
+                    </li>
+                    <li class="nav-item">
+                        <a href="./perfiles.php"><button type="button" class="btn btn-default" style="color: white"><span href="./perfiles.php" class="fas fa-address-card"></span> Perfiles</button></a>
                          
                     </li>
                   </ul>
@@ -49,7 +54,7 @@
                         <div class="card">
                                 <div class="card-header"><span class="fas fa-arrow-alt-circle-right fa-5x"></span></div>
                                 <div class="card-body"><p class="lead"> Visualiza tu plan de carrera</p></div>
-                                <div class="card-footer"><a href="app.html" class="btn btn-outline-dark btn-lg stretched-link">Comenzar</a></div>
+                                <div class="card-footer"><a href="app.php" class="btn btn-outline-dark btn-lg stretched-link">Comenzar</a></div>
                               </div>
                               <div class="card">
                                 <div class="card-header"><span class="fas fa-address-card fa-5x"></span></div>
@@ -63,7 +68,7 @@
                               <div class="card">
                                     <div class="card-header "><span class="fas fa-info-circle fa-5x"></span></div>
                                     <div class="card-body"><p class="lead">Informacion acerca de la App</p></div>
-                                    <div class="card-footer"> <a href="about.html" class="btn btn-outline-dark btn-lg stretched-link">Acerca De</a></div>
+                                    <div class="card-footer"> <a href="about.php" class="btn btn-outline-dark btn-lg stretched-link">Acerca De</a></div>
                               </div>
                                  
                       
@@ -84,27 +89,40 @@
       <div class="modal-header">
         <h4 class="modal-title">Registro</h4>
         <button type="button" class="close" data-dismiss="modal">&times;</button>
+       
       </div>
 
       <!-- Modal body -->
-      <div class="modal-body">
-          <div class="container">
+         <div class="modal-body">
+              <div class="container">
+              <?php if(isset($_SESSION['message'])) { ?>
+              <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                <?= $_SESSION['message'] ?>
+                 <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+               <span aria-hidden="true">&times;</span>
+              </button>
+          </div>
+                <?php session_unset();  }  ?> 
               <h2>Nuevo Usuario</h2>
-              <form action="/action_page.php">
+              <form action="insert.php" method="POST">
                 <div class="form-group">
                   <label for="form-name" >Nombre:</label>
-                  <input type="text" class="form-control" id="form-name" placeholder="Ingrese nombre:" name="form-name">
+                  <input type="text" class="form-control" id="form-name" placeholder="Ingrese nombre:" name="user">
+                </div>
+                <div class="form-group">
+                <label for="form-carrera">Carrera:</label>
+                <select name="carrera" class="form-control" id="form-carrera">
+                  <option value="Analisis de Sistemas">Analisis de Sistemas</option>
+                  <option value="Analisis Clinicos">Analisis Clinicos</option>
+                  <option value="Gestion Ambiental">Gestion Ambiental</option>
+                  <option value="Contable">Contable</option>
+                </select>
                 </div>
                 <div class="form-group">
                   <label for="pwd">Password:</label>
-                  <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+                  <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pass">
                 </div>
-                <div class="form-group form-check">
-                  <label class="form-check-label">
-                    <input class="form-check-input" type="checkbox" name="remember"> Remember me
-                  </label>
-                </div>
-                <button type="submit" class="btn btn-primary">Enviar</button>
+                <button type="submit" value="send" class="btn btn-primary">Enviar</button>
               </form>
             </div>
       </div>
